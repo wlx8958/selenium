@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test name="mooc_selenium(failed)">
+    <classes>
+      <class name="com.selenium.testCase.Login">
+        <methods>
+          <include name="testLogin"/>
+          <include name="TestSureOrder"/>
+          <include name="LoginTest"/>
+          <include name="TestGoPay"/>
+          <include name="TestBuyNow"/>
+          <include name="getLoginHome"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.selenium.testCase.Login -->
+    </classes>
+  </test> <!-- mooc_selenium(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

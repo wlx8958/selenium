@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="1" ignored="0" total="5" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="10308" started-at="2019-10-31T08:09:25Z" finished-at="2019-10-31T08:09:36Z">
+    <groups>
+    </groups>
+    <test name="mooc_selenium" duration-ms="10308" started-at="2019-10-31T08:09:25Z" finished-at="2019-10-31T08:09:36Z">
+      <class name="com.selenium.testCase.Login">
+        <test-method status="PASS" signature="LoginTest()[pri:0, instance:com.selenium.testCase.Login@5d5eef3d]" name="LoginTest" is-config="true" duration-ms="1467" started-at="2019-10-31T16:09:25Z" finished-at="2019-10-31T16:09:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="getLoginHome()[pri:0, instance:com.selenium.testCase.Login@5d5eef3d]" name="getLoginHome" duration-ms="8613" started-at="2019-10-31T16:09:27Z" finished-at="2019-10-31T16:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoginHome -->
+        <test-method status="FAIL" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.selenium.testCase.Login@5d5eef3d]" name="testLogin" duration-ms="0" started-at="2019-10-31T16:09:35Z" depends-on-methods="com.selenium.testCase.Login.getLoginHome" finished-at="2019-10-31T16:09:35Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'uname' is required by @Test on method testLogin but has not been marked @Optional or defined
+in /Users/wanglx/Library/Caches/IntelliJIdea2018.1/temp-testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'uname' is required by @Test on method testLogin but has not been marked @Optional or defined
+in /Users/wanglx/Library/Caches/IntelliJIdea2018.1/temp-testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="SKIP" signature="TestGoPay()[pri:0, instance:com.selenium.testCase.Login@5d5eef3d]" name="TestGoPay" duration-ms="0" started-at="2019-10-31T16:09:35Z" depends-on-methods="com.selenium.testCase.Login.TestSureOrder" finished-at="2019-10-31T16:09:35Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Login.TestGoPay()[pri:0, instance:com.selenium.testCase.Login@5d5eef3d] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Login.TestGoPay()[pri:0, instance:com.selenium.testCase.Login@5d5eef3d] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestGoPay -->
+        <test-method status="SKIP" signature="TestSureOrder()[pri:0, instance:com.selenium.testCase.Login@5d5eef3d]" name="TestSureOrder" duration-ms="0" started-at="2019-10-31T16:09:35Z" depends-on-methods="com.selenium.testCase.Login.TestBuyNow" finished-at="2019-10-31T16:09:35Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Login.TestSureOrder()[pri:0, instance:com.selenium.testCase.Login@5d5eef3d] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Login.TestSureOrder()[pri:0, instance:com.selenium.testCase.Login@5d5eef3d] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSureOrder -->
+        <test-method status="SKIP" signature="TestBuyNow()[pri:0, instance:com.selenium.testCase.Login@5d5eef3d]" name="TestBuyNow" duration-ms="0" started-at="2019-10-31T16:09:35Z" depends-on-methods="com.selenium.testCase.Login.testLogin" finished-at="2019-10-31T16:09:35Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Login.TestBuyNow()[pri:0, instance:com.selenium.testCase.Login@5d5eef3d] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Login.TestBuyNow()[pri:0, instance:com.selenium.testCase.Login@5d5eef3d] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBuyNow -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.selenium.testCase.Login@5d5eef3d]" name="close" is-config="true" duration-ms="207" started-at="2019-10-31T16:09:35Z" finished-at="2019-10-31T16:09:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.selenium.testCase.Login -->
+    </test> <!-- mooc_selenium -->
+  </suite> <!-- Default Suite -->
+</testng-results>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--parallel支持多线程-->
+<suite name="All Test Suite" parallel="false" >
+    <parameter name="uname" value="862383060@qq.com"/>
+    <parameter name="pwd" value="mkqwe123"/>
+    <test name="Test1">
+        <classes>
+            <class name="com.selenium.testCase.NewLogin"/>
+            <class name="com.selenium.testCase.SuiteTestBuy"/>
+        </classes>
+    </test>
+
+</suite>

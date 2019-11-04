@@ -1,0 +1,8 @@
+2019-10-31 00:23:22  [ TestNG-test=Test1-2:0 ] - [ DEBUG ]  这是通过log4j打印的日志
+2019-10-31 00:26:47  [ TestNG-test=Test1-2:0 ] - [ DEBUG ]  这是通过log4j打印的日志
+2019-10-31 13:40:22  [ main:0 ] - [ DEBUG ]  这是通过log4j打印的日志
+2019-10-31 13:53:27  [ TestNG-test=Test1-2:0 ] - [ DEBUG ]  这是通过log4j打印的日志
+2019-10-31 13:55:28  [ TestNG-test=Test1-2:0 ] - [ DEBUG ]  这是通过log4j打印的日志
+2019-10-31 13:56:13  [ TestNG-test=Test2-2:44858 ] - [ DEBUG ]  这是通过log4j打印的日志
+2019-10-31 16:19:24  [ TestNG-test=Test1-2:0 ] - [ DEBUG ]  这是通过log4j打印的日志
+2019-10-31 16:19:44  [ TestNG-test=Test2-2:19232 ] - [ DEBUG ]  这是通过log4j打印的日志

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mooc_selenium" basedir="." default="transform" >
+    <property name="lib.dir" value="lib"/>
+    <path id="test.classpath">
+        <fileset dir="${lib.dir}" includes="*.jar"/>
+    </path>
+    <target name="transform">
+        <xslt in="/Users/wanglx/SJava/mooc_selenium/test-output/testng-results.xml" style="/Users/wanglx/SJava/mooc_selenium/test-output/testng-results.xsl"
+              out="/Users/wanglx/SJava/mooc_selenium/test-output/TestReport/index.html">
+            <param name="testNgXslt.outputDir" expression="/Users/wanglx/SJava/mooc_selenium/test-output/TestReport" />
+            <classpath refid="test.classpath"/>
+        </xslt>
+    </target>
+</project>
